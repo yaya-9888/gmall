@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/realtime-dwd/realtime-dwd-06-base-db/pom.xml" />
+        <option value="$PROJECT_DIR$/realtime-dwd/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/realtime-dwd/realtime-dwd-06-base-log/pom.xml" />
+        <option value="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-vc-ch-ar-is_new-page-view-window/pom.xml" />
+        <option value="$PROJECT_DIR$/realtime-dws/realtime-dws-user-user-login-window/pom.xml" />
         <option value="$PROJECT_DIR$/sssssss/pom.xml" />
       </set>
     </option>

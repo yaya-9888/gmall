@@ -13,6 +13,9 @@
         <module>realtime-dim</module>
         <module>realtime-dwd</module>
         <module>realtime-dws</module>
+        <module>realtime-dws/realtime-dws-01-traffic-source-keyword-page-view-window</module>
+        <module>realtime-dws/realtime-dws-02-traffic-vc-ch-ar-is_new-page-view-window</module>
+        <module>realtime-dws/realtime-dws-05-user-user-register-window</module>
     </modules>
 
     <!-- 声明一些配置， 主要是依赖的版本号 -->

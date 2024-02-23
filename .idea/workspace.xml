@@ -4,20 +4,83 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2033b8fc-47f4-4382-bb88-dff6b861250b" name="Changes" comment="Hello world">
-      <change afterPath="$PROJECT_DIR$/realtime-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dim/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dim/src/main/java/com/yaya/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/src/main/java/com/yaya/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/src/main/java/com/yaya/Main.java" afterDir="false" />
+    <list default="true" id="2033b8fc-47f4-4382-bb88-dff6b861250b" name="Changes" comment="初步建设">
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/base/BaseSQLApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/bean/CartAddUuBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/bean/TableProcessDim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/bean/TableProcessDwd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/bean/TradePaymentBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/bean/TradeProvinceOrderBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/bean/TradeSkuOrderBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/bean/TradeTrademarkCategoryUserRefundBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/bean/TrafficHomeDetailPageViewBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/bean/TrafficPageViewBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/bean/UserLoginBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/bean/UserRegisterBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/constant/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/function/AsyncMapDimFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/function/DimFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/function/DorisMapFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/function/MapDimFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/util/DateFormatUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/util/FlinkSQLUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/util/FlinkSinkUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/util/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/util/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/test/java/com/yaya/Demo_Hbase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dim/src/main/java/com/yaya/DimApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-01-base-log/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-01-base-log/src/main/java/com/yaya/DwdBaseLogApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-02-interaction-comment-info/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-02-interaction-comment-info/src/main/java/com/yaya/DwdInteractionCommentInfoApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-03-trade-cart-add/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-03-trade-cart-add/src/main/java/com/yaya/DwdTradeCartAddApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-04-trade-order-detail/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-04-trade-order-detail/src/main/java/com/yaya/DwdTradeOrderDetailApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-05-trade-order-pay-suc-detail/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-05-trade-order-pay-suc-detail/src/main/java/DwdTradeOrderPaySucDetailApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-06-base-db/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-06-base-db/src/main/java/DwdBaseDbApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-11-trade-order-cancel-detail/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-11-trade-order-cancel-detail/src/main/java/com/yaya/DwdTradeOrderCancelDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-22-trade-order-refund/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-22-trade-order-refund/src/main/java/com/yaya/DwdTradeOrderRefund.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-33-trade-refund-pay-suc-detail/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-33-trade-refund-pay-suc-detail/src/main/java/DwdTradeRefundPaySucDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-01-traffic-source-keyword-page-view-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-01-traffic-source-keyword-page-view-window/src/main/java/com/yaya/app/DwsTrafficSourceKeywordPageViewWindowApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-01-traffic-source-keyword-page-view-window/src/main/java/com/yaya/function/SplitWordFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-01-traffic-source-keyword-page-view-window/src/main/java/com/yaya/util/IkUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-02-traffic-vc-ch-ar-is_new-page-view-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-02-traffic-vc-ch-ar-is_new-page-view-window/src/main/java/com/yaya/DwsTrafficVcChArIsNewPageViewWindowApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-03-traffic-home-detail-page-view-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-03-traffic-home-detail-page-view-window/src/main/java/com/yaya/DwsTrafficHomeDetailPageViewWindowApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-04-user-user-login-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-04-user-user-login-window/src/main/java/com/yaya/DwsUserUserLoginWindowApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-05-user-user-register-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-05-user-user-register-window/src/main/java/com/yaya/DwsUserUserRegisterWindowApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-06-trade-cart-add-uu-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-06-trade-cart-add-uu-window/src/main/java/com/yaya/DwsTradeCartAddUuWindowApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-07-trade-sku-order-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-07-trade-sku-order-window/src/main/java/com/yaya/DwsTradeSkuOrderWindowASyncCacheApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-07-trade-sku-order-window/src/main/java/com/yaya/DwsTradeSkuOrderWindowSyncCacheApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-08-trade-province-order-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-08-trade-province-order-window/src/main/java/com/yaya/DwsTradeProvinceOrderWindowApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-11-trade-payment-suc-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-11-trade-payment-suc-window/src/main/java/com/yaya/DwsTradePaymentSucWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-33-trade-trademark-category-user-refund-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-33-trade-trademark-category-user-refund-window/src/main/java/com/yaya/DwsTradeTrademarkCategoryUserRefundWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-common/src/main/java/com/yaya/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-dim/src/main/java/com/yaya/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-dwd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-dwd/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-dwd/src/main/java/com/yaya/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-dws/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-dws/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-dws/src/main/java/com/yaya/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +100,15 @@
         <option value="wxy &lt;@wxy_988&gt;" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -57,25 +128,125 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/Code/gmall2024-realtime-230821",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code/gmall_2024&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Code/gmall_2024/realtime-dwd/realtime-dwd-05-trade-order-pay-suc-detail/src/main/java/com/yaya/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\gmall_2024\realtime-common\src\main\java\com\yaya" />
+      <recent name="D:\Code\gmall_2024\realtime-dws\realtime-dws-01-traffic-source-keyword-page-view-window\src\main\java\com\yaya" />
+      <recent name="D:\Code\gmall_2024\realtime-common\src\main\java\com\yaya\util" />
+      <recent name="D:\Code\gmall_2024\realtime-common\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yaya.function" />
+      <recent name="com.yaya" />
+      <recent name="com.yaya.util" />
+      <recent name="com.yaya.bean" />
+      <recent name="com.yaya.base" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DwdTradeOrderRefund">
+    <configuration name="DwdTradeOrderCancelDetail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.yaya.DwdTradeOrderCancelDetail" />
+      <module name="realtime-dwd-11-trade-order-cancel-detail" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yaya.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DwdTradeOrderRefund" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.yaya.DwdTradeOrderRefund" />
+      <module name="realtime-dwd-22-trade-order-refund" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yaya.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DwdTradeRefundPaySucDetail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="DwdTradeRefundPaySucDetail" />
+      <module name="realtime-dwd-33-trade-refund-pay-suc-detail" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DwsTradeTrademarkCategoryUserRefundWindow (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.yaya.DwsTradeTrademarkCategoryUserRefundWindow" />
+      <module name="realtime-dws-33-trade-trademark-category-user-refund-window" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yaya.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DwsTradeTrademarkCategoryUserRefundWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.yaya.DwsTradeTrademarkCategoryUserRefundWindow" />
+      <module name="realtime-dws-33-trade-trademark-category-user-refund-window" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yaya.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DwdTradeOrderRefund" />
+        <item itemvalue="Application.DwdTradeRefundPaySucDetail" />
+        <item itemvalue="Application.DwdTradeOrderCancelDetail" />
+        <item itemvalue="Application.DwsTradeTrademarkCategoryUserRefundWindow (4)" />
+        <item itemvalue="Application.DwsTradeTrademarkCategoryUserRefundWindow" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -86,6 +257,34 @@
       <updated>1706406294427</updated>
       <workItem from="1706406295443" duration="2623000" />
       <workItem from="1706427843926" duration="2226000" />
+      <workItem from="1706439323824" duration="1302000" />
+      <workItem from="1706440642139" duration="6102000" />
+      <workItem from="1706447681222" duration="45000" />
+      <workItem from="1706488601681" duration="3495000" />
+      <workItem from="1706517487346" duration="12388000" />
+      <workItem from="1706533965126" duration="969000" />
+      <workItem from="1706574344172" duration="2148000" />
+      <workItem from="1706581415750" duration="16121000" />
+      <workItem from="1706661275231" duration="559000" />
+      <workItem from="1706665428320" duration="1180000" />
+      <workItem from="1706671291621" duration="2362000" />
+      <workItem from="1706834495965" duration="7172000" />
+      <workItem from="1707621883789" duration="11185000" />
+      <workItem from="1707700051424" duration="9239000" />
+      <workItem from="1707789178420" duration="15981000" />
+      <workItem from="1707835783816" duration="619000" />
+      <workItem from="1707878927642" duration="5794000" />
+      <workItem from="1707887535249" duration="7183000" />
+      <workItem from="1707956505614" duration="15000" />
+      <workItem from="1708216137920" duration="21140000" />
+      <workItem from="1708258372249" duration="4000" />
+      <workItem from="1708262489215" duration="394000" />
+      <workItem from="1708306521269" duration="18361000" />
+      <workItem from="1708389822099" duration="606000" />
+      <workItem from="1708398970820" duration="12696000" />
+      <workItem from="1708481849320" duration="17226000" />
+      <workItem from="1708569036954" duration="23858000" />
+      <workItem from="1708659610564" duration="359000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <option name="closed" value="true" />
@@ -103,14 +302,73 @@
       <option name="project" value="LOCAL" />
       <updated>1706408293735</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Hello world">
+      <option name="closed" value="true" />
+      <created>1706439392822</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706439392822</updated>
+    </task>
+    <task id="LOCAL-00004" summary="初步建设">
+      <option name="closed" value="true" />
+      <created>1706439452844</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706439452844</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hello world" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hello world" />
+    <MESSAGE value="初步建设" />
+    <option name="LAST_COMMIT_MESSAGE" value="初步建设" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.apache.flink.runtime.operators.coordination.TaskNotRunningException" package="org.apache.flink.runtime.operators.coordination" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/realtime-dwd/realtime-dwd-05-trade-order-pay-suc-detail/src/main/java/com/yaya/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
